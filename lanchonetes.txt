@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int codigo, qtd;
+
+    cout << "\n   Codigo   | Produto              | Preco  " << endl;
+    cout << "   100      |Cachorro quente       |  R$ 1,70 ";
+    cout << "\n   101      |Bauru simples         |  R$ 2,30 ";
+    cout << "\n   102      |Bauro com ovo         |  R$ 2,60 ";
+    cout << "\n   103      |Hamburger             |  R$ 2,40 ";
+    cout << "\n   104      |Cheeseburguer         |  R$ 2.50 ";
+    cout << "\n   105      |Refrigerante          |  R$ 1,00 ";
+
+    cout << "\n\n Cliente informe o codigo do produto que deseja :";
+    cin >> codigo;
+    cout << "\n Cliente informe a quantidade do produto que deseja :";
+    cin >> qtd;
+
+    switch (codigo)
+    {
+    case 100:
+        cout << "\n Cliente voce pediu " << qtd << " De Cachorros quentes total a pagar : " << qtd * 1.70 << " R$";
+        break;
+    case 101:
+        cout << "\n Cliente voce pediu " << qtd << " De Bauru simples total a pagar : " << qtd * 2.30 << " R$";
+        break;
+    case 102:
+        cout << "\n Cliente voce pediu " << qtd << " De Bauru com ovo total a pagar : " << qtd * 2.60 << " R$";
+        break;
+    case 103:
+        cout << "\n Cliente voce pediu " << qtd << " De Hamburguer  total a pagar : " << qtd * 2.40 << " R$";
+        break;
+    case 104:
+        cout << "\n Cliente voce pediu " << qtd << " De Cheesebuguer  total a pagar : " << qtd * 2.50 << " R$";
+        break;
+    case 105:
+        cout << "\n Cliente voce pediu " << qtd << " De Refrigerante  total a pagar : " << qtd * 1 << " R$";
+        break;
+    default:
+        cout << "\n Codigo invalido";
+    }
+
+    return 0;
+}
